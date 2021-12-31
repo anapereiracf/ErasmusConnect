@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logIn">
+
+    <fragment
+        android:id="@+id/logIn"
+        android:name="com.example.erasmushelp.ui.LogIn"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logIn_to_registerUser"
+            app:destination="@id/registerUser" />
+        <action
+            android:id="@+id/action_logIn_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUser"
+        android:name="com.example.erasmushelp.ui.RegisterUser"
+        android:label="fragment_register_user"
+        tools:layout="@layout/fragment_register_user" >
+        <action
+            android:id="@+id/action_registerUser_to_logIn"
+            app:destination="@id/logIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.erasmushelp.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_pointsOfInterest"
+            app:destination="@id/pointsOfInterest" />
+        <action
+            android:id="@+id/action_home2_to_links"
+            app:destination="@id/links" />
+        <action
+            android:id="@+id/action_home2_to_learnLanguage"
+            app:destination="@id/learnLanguage" />
+        <action
+            android:id="@+id/action_home2_to_housing"
+            app:destination="@id/housing" />
+        <action
+            android:id="@+id/action_home2_to_userProfile"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointsOfInterest"
+        android:name="com.example.erasmushelp.ui.PointsOfInterest"
+        android:label="fragment_points_of_interest"
+        tools:layout="@layout/fragment_points_of_interest" >
+        <action
+            android:id="@+id/action_pointsOfInterest_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/links"
+        android:name="com.example.erasmushelp.ui.Links"
+        android:label="fragment_links"
+        tools:layout="@layout/fragment_links" >
+        <action
+            android:id="@+id/action_links_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.erasmushelp.ui.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_userProfile"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/learnLanguage"
+        android:name="com.example.erasmushelp.ui.LearnLanguage"
+        android:label="fragment_learn_language"
+        tools:layout="@layout/fragment_learn_language" >
+        <action
+            android:id="@+id/action_learnLanguage_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/housing"
+        android:name="com.example.erasmushelp.ui.Housing"
+        android:label="fragment_housing"
+        tools:layout="@layout/fragment_housing" >
+        <action
+            android:id="@+id/action_housing_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.erasmushelp.ui.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_userProfile_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>

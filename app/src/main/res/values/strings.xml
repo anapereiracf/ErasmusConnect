@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">erasmusHelp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_error">Name field empty</string>
+    <string name="email_error">Email field empty</string>
+    <string name="email_valid_error">Invalid email</string>
+    <string name="passEmpty_error">Password can not be empty</string>
+    <string name="passDif_error">Passwords dont match</string>
+    <string name="registration_message">Registering user</string>
+    <string name="registration_error">User could not be registered</string>
+    <string name="registration_sucess_mensage">User registered with success</string>
+    <string name="login_verify_error">Login error! Check your credentials</string>
+    <string name="uploading">\"Uploading...\"</string>
+    <string name="uploading_success">Upload successful!</string>
+    <string name="uploading_error">Error on uploading!</string>
+
+</resources>

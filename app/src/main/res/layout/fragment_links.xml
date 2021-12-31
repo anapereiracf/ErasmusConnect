@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Links">
+
+    <ImageView
+        android:id="@+id/bgimg"
+        android:layout_width="800dp"
+        android:layout_height="1051dp"
+        android:src="@drawable/backbround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ESN"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="#86FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427">
+
+        <ImageView
+            android:id="@+id/ESNlogo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/image3" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/ESNtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Erasmus Student Network"
+        android:textAppearance="@style/custom_headline5"
+        android:textColor="@color/primary_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ESNTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="48dp"
+        android:text="Erasmus Student Network is a Europe-wide student organisation. The organization supports and develops student exchanges, both inside the Erasmus+ programme and outside of it."
+        android:textAppearance="@style/custom_body2"
+        android:textColor="@color/surface_color_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ESN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Facebook"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="#86FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.735">
+
+        <ImageView
+            android:id="@+id/facelogo"
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:src="@drawable/facegroups" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Facetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Facebook Groups"
+        android:textAppearance="@style/custom_headline5"
+        android:textColor="@color/primary_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ESN" />
+
+    <TextView
+        android:id="@+id/titleExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="External Resources"
+        android:textAppearance="@style/custom_headline4"
+        android:textColor="@color/primary_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/returnBtn"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:minHeight="48dp"
+        android:src="?attr/actionModeCloseDrawable"
+        app:circularflow_defaultRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

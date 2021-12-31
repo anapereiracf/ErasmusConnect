@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Settings">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="544dp"
+        android:layout_height="965dp"
+        android:src="@drawable/backbround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="286dp"
+        android:layout_height="450dp"
+        android:background="#37FFFFFF"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002">
+
+        <TextView
+            android:id="@+id/settingsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Settings"
+            android:textAppearance="@style/custom_headline5" />
+
+        <EditText
+            android:id="@+id/insertName"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Your name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <EditText
+            android:id="@+id/Age"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <TextView
+            android:id="@+id/birthdate"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD-MM-YYYY"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <EditText
+            android:id="@+id/country"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Home Country"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <EditText
+            android:id="@+id/motherTongue"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mother Tongue"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <EditText
+            android:id="@+id/homeSchool"
+            style="@android:style/Widget.DeviceDefault.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Home University"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAppearance="@style/custom_body2"
+            android:textColor="@color/primary_white"
+            android:textColorHighlight="@color/primary_white"
+            android:textColorHint="@color/primary_white"
+            android:textColorLink="@color/primary_white" />
+
+        <Button
+            android:id="@+id/saveChanges"
+            style="@style/MyButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Save Changes"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/motherTongue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motherTongue"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changepfp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change profile picture"
+        android:textAppearance="@style/custom_subtitle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/savepfp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save profile picture"
+        android:textAppearance="@style/custom_subtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changepfp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savepfp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCard"
+            android:layout_width="118dp"
+            android:layout_height="121dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toEndOf="@+id/btn_goBack"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/pfp_setts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/btn_goBack"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:src="?attr/actionModeCloseDrawable"
+            app:circularflow_defaultRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
