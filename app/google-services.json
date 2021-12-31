@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "831739837272",
+    "project_id": "erasmushelp11",
+    "storage_bucket": "erasmushelp11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831739837272:android:7da791756df1d44607832d",
+        "android_client_info": {
+          "package_name": "com.example.erasmushelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831739837272-q6vmcinv9hlfr6eiag9c3642tjlgtr93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3nE-0qOps58z8C9jp_0XG9dPVy8IKqco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831739837272-q6vmcinv9hlfr6eiag9c3642tjlgtr93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
