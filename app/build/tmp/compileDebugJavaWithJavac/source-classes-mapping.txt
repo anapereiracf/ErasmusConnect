@@ -1,0 +1,32 @@
+com/example/erasmushelp/ui/Links.java
+ com.example.erasmushelp.ui.Links
+com/example/erasmushelp/ui/Housing.java
+ com.example.erasmushelp.ui.Housing
+com/example/erasmushelp/data/Consts.java
+ com.example.erasmushelp.data.Consts
+com/example/erasmushelp/ui/PointsOfInterest.java
+ com.example.erasmushelp.ui.PointsOfInterest
+ com.example.erasmushelp.ui.PointsOfInterest$1
+com/example/erasmushelp/data/InternalStorage.java
+ com.example.erasmushelp.data.InternalStorage
+com/example/erasmushelp/ui/RegisterUser.java
+ com.example.erasmushelp.ui.RegisterUser
+com/example/erasmushelp/MainActivity.java
+ com.example.erasmushelp.MainActivity
+com/example/erasmushelp/ui/LearnLanguage.java
+ com.example.erasmushelp.ui.LearnLanguage
+com/example/erasmushelp/ui/Home.java
+ com.example.erasmushelp.ui.Home
+ com.example.erasmushelp.ui.Home$1
+com/example/erasmushelp/ui/Settings.java
+ com.example.erasmushelp.ui.Settings
+ com.example.erasmushelp.ui.Settings$1
+com/example/erasmushelp/ui/LogIn.java
+ com.example.erasmushelp.ui.LogIn
+com/example/erasmushelp/BuildConfig.java
+ com.example.erasmushelp.BuildConfig
+com/example/erasmushelp/data/User.java
+ com.example.erasmushelp.data.User
+com/example/erasmushelp/ui/UserProfile.java
+ com.example.erasmushelp.ui.UserProfile
+ com.example.erasmushelp.ui.UserProfile$1
