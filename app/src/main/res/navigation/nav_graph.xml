@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerUser"
-        android:name="com.example.erasmushelp.ui.RegisterUser"
+        android:name="com.example.erasmushelp.ui.users.RegisterUser"
         android:label="fragment_register_user"
         tools:layout="@layout/fragment_register_user" >
         <action
@@ -32,9 +32,6 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_home2_to_pointsOfInterest"
-            app:destination="@id/pointsOfInterest" />
-        <action
             android:id="@+id/action_home2_to_links"
             app:destination="@id/links" />
         <action
@@ -46,15 +43,9 @@
         <action
             android:id="@+id/action_home2_to_userProfile"
             app:destination="@id/userProfile" />
-    </fragment>
-    <fragment
-        android:id="@+id/pointsOfInterest"
-        android:name="com.example.erasmushelp.ui.PointsOfInterest"
-        android:label="fragment_points_of_interest"
-        tools:layout="@layout/fragment_points_of_interest" >
         <action
-            android:id="@+id/action_pointsOfInterest_to_home2"
-            app:destination="@id/home2" />
+            android:id="@+id/action_home2_to_pointsOfInterest"
+            app:destination="@id/pointsOfInterest" />
     </fragment>
     <fragment
         android:id="@+id/links"
@@ -67,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/settings"
-        android:name="com.example.erasmushelp.ui.Settings"
+        android:name="com.example.erasmushelp.ui.settings.Settings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" >
         <action
@@ -94,7 +85,7 @@
     </fragment>
     <fragment
         android:id="@+id/userProfile"
-        android:name="com.example.erasmushelp.ui.UserProfile"
+        android:name="com.example.erasmushelp.ui.users.UserProfile"
         android:label="fragment_user_profile"
         tools:layout="@layout/fragment_user_profile" >
         <action
@@ -102,6 +93,15 @@
             app:destination="@id/settings" />
         <action
             android:id="@+id/action_userProfile_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointsOfInterest"
+        android:name="com.example.erasmushelp.ui.ptnsInterest.PointsOfInterest"
+        android:label="fragment_points_of_interest"
+        tools:layout="@layout/fragment_points_of_interest" >
+        <action
+            android:id="@+id/action_pointsOfInterest_to_home2"
             app:destination="@id/home2" />
     </fragment>
 </navigation>
