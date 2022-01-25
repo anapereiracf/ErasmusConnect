@@ -1,10 +1,13 @@
 package com.example.erasmushelp.data;
 
+import android.Manifest;
+
 public interface Consts {
 
     //--------------------DATABASE--------------------
     String DATABASE_PATH = "https://erasmushelp11-default-rtdb.europe-west1.firebasedatabase.app/";
-    String PATH = "Users";
+    String PATH_USERS = "Users";
+    String PATH_PLACES = "Places";
 
     //--------------------EXTERNAL RESOURCES--------------------
     String ESN_LINK = "https://www.esn.org";
@@ -17,5 +20,9 @@ public interface Consts {
     String HOUSING_ANYWHERE = "https://housinganywhere.com/s/Venice--Italy/student-accommodation";
     String UNIPLACES = "https://www.uniplaces.com/accommodation/venice";
     String CF_HOUSING = "https://www.unive.it/pag/20098/";
+
+    //--------------PERMISSIONS------------------------
+    String MAN_FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+    String MAN_COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
 }
 
