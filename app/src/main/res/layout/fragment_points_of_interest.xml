@@ -1,8 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.PointsOfInterest" />
+    android:orientation="vertical"
+    tools:context=".ui.ptnsInterest.PointsOfInterest">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="1118dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="40dp"
+            android:background="#37FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/erasmusSpots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/erasmus_spots" />
+
+            <RadioButton
+                android:id="@+id/restaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/restaurants" />
+
+            <RadioButton
+                android:id="@+id/otherSpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/other_spots" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <!-- <ImageView
+         android:id="@+id/backgrd"
+         android:layout_width="539dp"
+         android:layout_height="929dp"
+         android:src="@drawable/backbround"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/PtsIntText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="60dp"
+         android:layout_marginEnd="96dp"
+         android:text="@string/points_of_interest"
+         android:textAppearance="@style/custom_headline5"
+         app:layout_constraintBottom_toTopOf="@id/options"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="1.0" />
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/cardMaps"
+         android:layout_width="350dp"
+         android:layout_height="500dp"
+         android:layout_marginBottom="32dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.488"
+         app:layout_constraintStart_toStartOf="parent">
+
+         <com.google.android.gms.maps.MapView
+             android:id="@+id/googleMaps"
+             android:name="com.google.android.gms.maps.SupportMapFragment"
+             android:layout_width="0dp"
+             android:layout_height="500dp"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="15dp"
+             android:layout_marginBottom="10dp"
+             tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+     </androidx.cardview.widget.CardView>
+
+     <RadioGroup
+         android:id="@+id/options"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#37FFFFFF"
+         android:orientation="horizontal"
+         android:layout_marginTop="0dp"
+         android:layout_marginHorizontal="25dp"
+         app:layout_constraintBottom_toTopOf="@id/cardMaps"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/PtsIntText"
+         app:layout_constraintVertical_bias="0.0">
+
+         <RadioButton
+             android:id="@+id/erasmusSpots"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:onClick="onRadioButtonClicked"
+             android:text="@string/erasmus_spots" />
+
+         <RadioButton
+             android:id="@+id/restaurants"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:onClick="onRadioButtonClicked"
+             android:text="@string/restaurants" />
+
+         <RadioButton
+             android:id="@+id/otherSpts"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:onClick="onRadioButtonClicked"
+             android:text="@string/other_spots" />
+     </RadioGroup>-->
+
+</LinearLayout>
