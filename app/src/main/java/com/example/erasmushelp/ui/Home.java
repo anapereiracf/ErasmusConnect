@@ -52,7 +52,7 @@ public class Home extends Fragment implements Consts {
 
     private void initializeDatabase() {
         FirebaseUser fbuser = FirebaseAuth.getInstance().getCurrentUser();
-        database = FirebaseDatabase.getInstance(DATABASE_PATH).getReference().child(PATH).child(fbuser.getUid());
+        database = FirebaseDatabase.getInstance(DATABASE_PATH).getReference().child(PATH_USERS).child(fbuser.getUid());
 
         database.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -77,7 +77,6 @@ public class Home extends Fragment implements Consts {
             Glide.with(this).load(user.getImage()).placeholder(R.drawable.avatarpfp).fitCenter().into(pfpicture);
         }
     }
-
 
     private void initializeElements(View root) {
         card_extRes = root.findViewById(R.id.ExtRes);
